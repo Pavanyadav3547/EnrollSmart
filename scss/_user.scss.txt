@@ -1,0 +1,11 @@
+//
+// user.scss
+//
+.login-page {
+    font-size: 15px;
+    .forgot-pass {
+        z-index: 99;
+        position: relative;
+        font-size: 13px;
+    }
+} 

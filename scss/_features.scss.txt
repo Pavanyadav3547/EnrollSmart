@@ -1,0 +1,78 @@
+//
+// features.scss
+//
+.feature-list {
+    li {
+        margin-bottom: 5px;
+        font-size: 15px;
+    }
+}
+.features {
+    .icon {
+        font-size: 24px;
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        background: lighten($primary, 45%);
+        text-align: center;
+    }
+    .image {
+        img {
+            height: 60px;
+        }
+        &:before {
+            content: "";
+            position: absolute;
+            bottom: 0px;
+            right: -15px;
+            width: 70px;
+            height: 70px;
+            border-radius: 10px;
+            transform: rotate(22deg);
+            background-color: lighten($primary, 46%);
+            z-index: -1;
+        }
+    }
+    .title-2 {
+        font-size: 20px;
+    }
+}
+.key-feature {
+    transition: all 0.2s ease;
+    .icon {
+        height: 40px;
+        width: 40px;
+        line-height: 40px;
+        background: lighten($primary, 45%);
+        font-size: 24px;
+    }
+    
+    &:hover {
+        transform: scale(1.05);
+    }
+}
+.key-feature .content, .features{
+    .title {
+        font-size: 18px;
+    }
+}
+// Work process
+.work-process {
+    transition: all 0.5s ease;
+    .title {
+        font-size: 20px;
+    }
+    .step, .step-icon {
+        font-size: 45px;
+        opacity: 0.06;
+    }
+    a {
+        font-size: 15px;
+        &:hover {
+            color: darken($primary, 10%) !important;
+        }
+    }
+    &:hover {
+        transform: translateY(-10px);
+    }
+}

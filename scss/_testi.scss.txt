@@ -1,0 +1,39 @@
+//
+// testi.scss
+//
+.owl-theme .owl-controls .owl-page span {
+    background: #2f55d4 !important;
+}
+.customer-testi {
+    .content {
+        &:before {
+            content: "";
+            position: absolute;
+            top: 30px;
+            margin-left: -3px;
+            box-sizing: border-box;
+            border: 8px solid #495057;
+            border-color: transparent $white $white transparent;
+            transform-origin: 0 0;
+            transform: rotate(135deg);
+            box-shadow: 2px 2px 2px -1px rgba(0, 0, 0, 0.15);
+        }
+    }
+}
+.owl-theme {
+    .owl-controls {
+        .owl-page {
+            span {
+                border-radius: 2px;
+                background: transparent;
+                border: 2px solid $primary;
+                transition: all 0.5s ease;
+            }
+        }
+        .owl-page.active span, 
+        &.clickable .owl-page:hover span {
+            background: $primary;
+            transform: rotate(45deg);
+        }
+    }
+}
